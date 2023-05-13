@@ -1,0 +1,105 @@
+/* Réinitialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Police de caractères et taille de police par défaut */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+/* Style de base des liens dans la nav bar */
+nav a {
+  margin-right: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+}
+
+/* Animation lorsque la souris passe sur un lien */
+li a:hover {
+
+  padding : -200px;
+  box-sizing: border-box;
+}
+
+/* Style de base des listes non ordonnées */
+ul {
+  list-style: none;
+  display: flex; /* Alignement horizontal des éléments */
+  /*gap: 1rem; /* Espacement entre les éléments */
+}
+
+/* Style de base des liens */
+li a {
+ /* text-decoration: none; /* Suppression de la soulignement des liens */
+  color: black; /* Couleur de police par défaut */
+  transition: all 0.3s ease; /* Transition de tous les changements */
+}
+
+/* Style de la barre de navigation */
+.navv {
+  padding: 0 2rem;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+}
+
+/* Style de l'icône dans les liens de la nav bar */
+.navv i {
+  margin-right: 1rem;
+}
+
+/* Style de l'image de présentation */
+.imgpresentation {
+  width: 100%;
+}
+div strong {
+  /*text-decoration: none; /* Suppression de la soulignement des liens */
+  color: black; /* Couleur de police par défaut */
+  transition: all 0.3s ease; /* Transition de tous les changements */
+  
+}
+div strong:hover{
+
+  
+}
+
+/* Code suivant a ignorer */
+
+/* Définition du style de base pour le lien */
+
+a {
+  text-decoration: none; /* Supprime tout soulignement du texte */
+  position: relative; /* Positionnement relatif pour les éléments enfants */
+}
+
+  /* Création d'un élément avant le lien pour simuler le soulignement */
+
+a:before {
+  content: ""; /* Ajout de contenu vide */
+  position: absolute; /* Positionnement absolu pour l'élément */
+  width: 100%; /* Largeur de l'élément à 100% */
+  height: 2px; /* Hauteur de l'élément à 2 pixels pour simuler le soulignement */
+  bottom: 0; /* Position en bas de l'élément parent */
+  left: 0; /* Position à gauche de l'élément parent */
+  background-color: black; /* Couleur de fond de l'élément à bleu */
+  visibility: hidden; /* Masque l'élément avant le survol */
+  transform: scaleX(0); /* Ajuste la largeur de l'élément à zéro */
+  transition: all 0.3s ease-in-out; /* Ajoute une transition douce pour tous les styles */
+}
+
+/* Ajout d'un effet de survol pour le soulignement */
+a:hover:before {
+  visibility: visible; /* Rend l'élément visible au survol */
+  transform: scaleX(1); /* Ajuste la largeur de l'élément à 100% */
+}
